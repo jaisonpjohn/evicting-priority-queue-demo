@@ -18,36 +18,36 @@ public class DemoApp {
 
   public static void main(final String[] args) {
 
-    PriorityQueue pq = new EvictingPriorityQueue(10);
-    pq.insertWithOverflow(10);
-    pq.insertWithOverflow(4);
-    pq.insertWithOverflow(5);
+    PriorityQueue priorityQueue = new EvictingPriorityQueue(10);
+    priorityQueue.insertWithOverflow(10);
+    priorityQueue.insertWithOverflow(4);
+    priorityQueue.insertWithOverflow(5);
 
-    pq.insertWithOverflow(1);
-    pq.insertWithOverflow(3);
-    pq.insertWithOverflow(5);
-    pq.insertWithOverflow(15);
-    pq.insertWithOverflow(55);
-    pq.insertWithOverflow(0);
+    priorityQueue.insertWithOverflow(1);
+    priorityQueue.insertWithOverflow(3);
+    priorityQueue.insertWithOverflow(5);
+    priorityQueue.insertWithOverflow(15);
+    priorityQueue.insertWithOverflow(55);
+    priorityQueue.insertWithOverflow(0);
 
     // Filling some more numbers
     for(int i=30;i<55;i++){
-      pq.insertWithOverflow(i);
+      priorityQueue.insertWithOverflow(i);
     }
-    pq.insertWithOverflow(1);
-    pq.insertWithOverflow(9);
-    pq.insertWithOverflow(2);
-    pq.insertWithOverflow(8);
-    pq.insertWithOverflow(7);
-    pq.insertWithOverflow(6);
+    priorityQueue.insertWithOverflow(1);
+    priorityQueue.insertWithOverflow(9);
+    priorityQueue.insertWithOverflow(2);
+    priorityQueue.insertWithOverflow(8);
+    priorityQueue.insertWithOverflow(7);
+    priorityQueue.insertWithOverflow(6);
 
     // Filling some more numbers
     for(int i=45;i<65;i++){
-      pq.insertWithOverflow(i);
+      priorityQueue.insertWithOverflow(i);
     }
 
-    while (pq.size()>0){
-      System.out.println(pq.pop());
+    while (priorityQueue.size()>0){
+      System.out.println(priorityQueue.pop());
     }
 
   }
